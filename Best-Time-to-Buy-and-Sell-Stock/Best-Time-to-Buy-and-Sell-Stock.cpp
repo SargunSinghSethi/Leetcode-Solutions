@@ -1,3 +1,7 @@
+
+
+
+
 class Solution 
 {
 public:
@@ -9,13 +13,9 @@ public:
       for(int i = 0; i < prices.size(); i++)
       {
         if(min > prices[i])
-        {
           min = prices[i];
-        }
-        else if(profit < prices[i] - min)
-        {
+        if(profit < prices[i] - min)
           profit = prices[i] - min;
-        }
       }
       return profit
     }
